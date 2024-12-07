@@ -1,1 +1,36 @@
-规则
+# NAME: JPmatch
+# AUTHOR: @hi9527
+# UPDATED: 2024-12-07 15:16:12
+# DOMAIN-KEYWORD: 1
+# DOMAIN-SUFFIX: 26
+# IP-CIDR: 0
+# PROCESS-NAME: 1
+# TOTAL: 26
+DOMAIN-SUFFIX,tokyo-calendar-date.jp
+DOMAIN-SUFFIX,tokyo-calendar-romance.jp
+DOMAIN-SUFFIX,partner.yahoo.co.jp
+DOMAIN-SUFFIX,with.is
+DOMAIN-SUFFIX,fb.omiai-jp.com
+DOMAIN-SUFFIX,ange.gift
+DOMAIN-SUFFIX,tapple.me
+DOMAIN-SUFFIX,youbride.jp
+DOMAIN-SUFFIX,bridalnet.co.jp
+DOMAIN-SUFFIX,after-noon.jp
+DOMAIN-SUFFIX,jp.match.com
+DOMAIN-SUFFIX,marrish.com
+DOMAIN-SUFFIX,pairs.lv
+DOMAIN-SUFFIX,yyc.co.jp
+DOMAIN-SUFFIX,zexy-enmusubi.net
+DOMAIN-SUFFIX,194964.com
+DOMAIN-SUFFIX,pcmax.jp
+DOMAIN-SUFFIX,happymail.co.jp
+DOMAIN-SUFFIX,couplink.jp
+DOMAIN-SUFFIX,badoo.com
+DOMAIN-SUFFIX,kikonclub.com
+DOMAIN-SUFFIX,okcupid.com
+DOMAIN-SUFFIX,lovean.jp
+DOMAIN-SUFFIX,mitsumitsu-app.com
+DOMAIN-SUFFIX,paters.jp
+DOMAIN-SUFFIX,tinder.com
+DOMAIN-SUFFIX,sugardaddy.jp
+DOMAIN-SUFFIX,cuddle-jp.com
