@@ -6,8 +6,8 @@
 
 proxy-providers:
 
-  火烧云:
-    url: "[订阅地址（机场原始地址/Sub-Store格式化后的地址）]"
+  电报hi9527:
+    url: "https://sub.iss.im/dhy-etk6jrw8auw*EKF8/download/collection/All?target=ClashMeta"
     type: http
     interval: 86400
     health-check:
@@ -16,85 +16,6 @@ proxy-providers:
       interval: 300
     proxy: 直连 
     
-  冰云:
-    url: "[订阅地址（机场原始地址/Sub-Store格式化后的地址）]"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连    
-
-  小牛:
-    url: "[订阅地址（机场原始地址/Sub-Store格式化后的地址）]"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连    
-
-  硅谷:
-    url: "[订阅地址（机场原始地址/Sub-Store格式化后的地址）]"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连      
-  
-  无界:
-    url: "[订阅地址（机场原始地址/Sub-Store格式化后的地址）]"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连   
-   
-  猫耳:
-    url: "[订阅地址（机场原始地址/Sub-Store格式化后的地址）]"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连   
-
-  快猫:
-    url: "[订阅地址（机场原始地址/Sub-Store格式化后的地址）]"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连 
-    
-  BestVPN:
-    url: "[订阅地址（机场原始地址/Sub-Store格式化后的地址）]"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连     
-
-  牛逼:
-    url: "[订阅地址（机场原始地址/Sub-Store格式化后的地址）]"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连      
 
 proxies:
   - {name: 直连, type: direct}
@@ -129,48 +50,11 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.20.0.1/16
   nameserver:
-    - 223.5.5.5
+    - 192.168.1.1
   fake-ip-filter:
     - +.lan
     - +.local
     - geosite:cn
-# 快猫    
-    - +.quickcht3.club
-    - +.kuaimao2.club
-# 火烧 
-    - +.onesubv.site
-    - +.oneyyds.online
-    - +.fengyyds.site
-    - +.onemg.top
-# 猫耳 
-    - +.zhunchuanpb.com
-    - +.sevenka.top
-# BestVPN 
-    - +.networklinkpro.net
-    - +.prosubnet02.eu
-# 小牛
-    - +.4yfu73r3a4kl.com
-    - +.xiaoniuyun.cc  
-# 硅谷
-    - +.huawei-cloud.shop
-    - +.huawei-cloud.vip
-    - +.gpt-agent.cc      
-# 无界
-    - +.acwct.cn
-    - +.472361.xyz
-# 冰云
-    - +.bingyun.ink   
-    - +.fafhjkah.xyz
-# 牛逼   
-    - +.66jc.top  
-    - +.jueduibupao.top  
-    
-    - +.qeayr.cn
-    - +.saojc.xyz   
-    - +.sssyun.xyz
-    - +.dler.cloud
-    - +.0tk8a3a1q4t94dler.com    
-    - +.aerianas.top
 
 ipv6: true
 
@@ -212,35 +96,6 @@ default: &default
 
 proxy-groups:
 
-  # 业务分流组
-  - {name: ChatGPT, <<: *default}
-  - {name: Claude, <<: *default}
-  - {name: Meta AI, <<: *default}
-  - {name: Perplexity, <<: *default}
-  - {name: GitHub, <<: *default}
-  - {name: Telegram, <<: *default}
-  - {name: Twitter(X), <<: *default}
-  - {name: WhatsApp, <<: *default}
-  - {name: Facebook, <<: *default}
-  - {name: Steam, <<: *default}
-  - {name: Game, <<: *default}
-  - {name: YouTube, <<: *default}
-  - {name: TikTok, <<: *default}
-  - {name: Disney, <<: *default}
-  - {name: Netflix, <<: *default}
-  - {name: HBO, <<: *default}
-  - {name: Spotify, <<: *default}
-  - {name: Crypto, <<: *default}
-  - {name: Amazon, <<: *default}
-  - {name: Apple, <<: *default}
-  - {name: Microsoft, <<: *default}
-  - {name: Google, <<: *default}
-  - {name: Test, <<: *default}
-  - {name: Block, <<: *default}
-  - {name: 国外, <<: *default}
-  - {name: 国内, <<: *default}
-  - {name: 其他, <<: *default}
-
   - name: 所有-手动
     type: select
     include-all: true
@@ -252,6 +107,60 @@ proxy-groups:
     tolerance: 50
     interval: 300
     filter: "^((?!(直连|拒绝)).)*$"
+
+  # 定义Line策略组仅选择日本线路
+  - name: Line
+    type: select
+    include-all: true
+    filter: "(?=.*(广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan)).*$"
+
+  # 业务分流组
+  - {name: Telegram, <<: *default}
+  - {name: Twitter(X), <<: *default}
+  - {name: WhatsApp, <<: *default}
+  - {name: Facebook, <<: *default}
+  - {name: TikTok, <<: *default}
+  - {name: Google, <<: *default}
+  - {name: ChatGPT, <<: *default}
+  - {name: Claude, <<: *default}
+  - {name: Meta AI, <<: *default}
+  - {name: Perplexity, <<: *default}
+  - {name: GitHub, <<: *default}
+  - {name: YouTube, <<: *default}
+  - {name: Steam, <<: *default}
+  - {name: Game, <<: *default}
+  - {name: Disney, <<: *default}
+  - {name: Netflix, <<: *default}
+  - {name: HBO, <<: *default}
+  - {name: Spotify, <<: *default}
+  - {name: Crypto, <<: *default}
+  - {name: Amazon, <<: *default}
+  - {name: Apple, <<: *default}
+  - {name: Microsoft, <<: *default}
+  - {name: Test, <<: *default}
+  - {name: Block, <<: *default}
+  - {name: 国外, <<: *default}
+  - {name: 国内, <<: *default}
+  - {name: 其他, <<: *default}
+
+  # 日本组
+  - name: 日本-故转
+    type: fallback
+    interval: 300
+    lazy: false
+    proxies:
+      - 日本-手动
+      - 日本-自动
+  - name: 日本-手动
+    type: select
+    include-all: true
+    filter: "(?=.*(广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan)).*$"
+  - name: 日本-自动
+    type: url-test
+    include-all: true
+    tolerance: 50
+    interval: 300
+    filter: "(?=.*(广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan)).*$"
 
   # 香港组
   - name: 香港-故转
@@ -292,25 +201,6 @@ proxy-groups:
     tolerance: 50
     interval: 300
     filter: "(?=.*(广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan)).*$"
-
-  # 日本组
-  - name: 日本-故转
-    type: fallback
-    interval: 300
-    lazy: false
-    proxies:
-      - 日本-手动
-      - 日本-自动
-  - name: 日本-手动
-    type: select
-    include-all: true
-    filter: "(?=.*(广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan)).*$"
-  - name: 日本-自动
-    type: url-test
-    include-all: true
-    tolerance: 50
-    interval: 300
-    filter: "(?=.*(广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan)).*$"
 
   # 新加坡组
   - name: 新加坡-故转
@@ -412,18 +302,19 @@ proxy-groups:
 # ========================
 rules:
 
+  - RULE-SET,Line / Domain,Line
   - RULE-SET,TEST / Domain,Test
   - RULE-SET,Block / Domain,Block  
-  - RULE-SET,ChatGPT / Domain,ChatGPT
-  - RULE-SET,Claude / Domain,Claude
-  - RULE-SET,Meta AI / Domain,Meta AI
-  - RULE-SET,Perplexity / Domain,Perplexity
-  - RULE-SET,Github / Domain,GitHub
   - RULE-SET,Telegram / Domain,Telegram
   - RULE-SET,Telegram / IP,Telegram,no-resolve
   - RULE-SET,Twitter / Domain,Twitter(X)
   - RULE-SET,WhatsApp / Domain,WhatsApp
   - RULE-SET,Facebook / Domain,Facebook
+  - RULE-SET,ChatGPT / Domain,ChatGPT
+  - RULE-SET,Claude / Domain,Claude
+  - RULE-SET,Meta AI / Domain,Meta AI
+  - RULE-SET,Perplexity / Domain,Perplexity
+  - RULE-SET,Github / Domain,GitHub
   - RULE-SET,Amazon / Domain,Amazon
   - RULE-SET,Apple / Domain,Apple
   - RULE-SET,Apple-CN / Domain,Apple  
@@ -464,6 +355,7 @@ rule-anchor:
   class: &class {type: http, interval: 86400, behavior: classical, format: text}
 
 rule-providers:
+  Line / Domain: {<<: *class, url: "https://github.moeyy.xyz/https://raw.githubusercontent.com/xjonjoy/clashDNS/main/Line.list"}
   TEST / Domain: {<<: *class, url: "https://github.moeyy.xyz/https://raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Check.list"}
   ChatGPT / Domain: {<<: *domain, url: "https://github.moeyy.xyz/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/openai.mrs"}
   Claude / Domain: {<<: *class, url: "https://github.moeyy.xyz/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Claude/Claude.list"}
