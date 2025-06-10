@@ -1,0 +1,47 @@
+# Larksuite
+# DATE: 2024-06-11
+# Updated: 2025-06-10
+
+# Core Domains for Larksuite/Feishu
+DOMAIN-SUFFIX,larksuite.com
+DOMAIN-SUFFIX,lark.com
+DOMAIN-SUFFIX,feishu.cn
+DOMAIN-SUFFIX,feishucorp.com
+DOMAIN-SUFFIX,getfeishu.cn
+DOMAIN-SUFFIX,byteoversea.com
+DOMAIN-SUFFIX,bytegecko.com
+DOMAIN-SUFFIX,ibytedtos.com
+DOMAIN-SUFFIX,larkoffice.com
+DOMAIN-SUFFIX,feishu.net
+DOMAIN-SUFFIX,feishuapp.cn
+
+# CDN Domains
+DOMAIN-SUFFIX,feishucdn.com
+DOMAIN-SUFFIX,larksuitecdn.com
+DOMAIN-SUFFIX,cdn.larksuite.com
+DOMAIN-SUFFIX,static.feishu.cn
+
+# Video Conferencing Domains
+DOMAIN-SUFFIX,larkv.com
+DOMAIN-SUFFIX,vc.feishu.cn
+DOMAIN-SUFFIX,feishu.video
+
+# Docs and Cloud Storage Domains
+DOMAIN-SUFFIX,larkdocs.com
+DOMAIN-SUFFIX,drive.feishu.cn
+
+# Calendar and Mail Domains
+DOMAIN-SUFFIX,calendar.feishu.cn
+DOMAIN-SUFFIX,mail.feishu.cn
+
+# API and Developer Platform Domains
+DOMAIN-SUFFIX,api.feishu.cn
+DOMAIN-SUFFIX,open.feishu.cn
+DOMAIN-SUFFIX,developer.feishu.cn
+DOMAIN-SUFFIX,open.larksuite.com
+DOMAIN-SUFFIX,developer.larksuite.com
+DOMAIN-SUFFIX,feishu-api.com
+
+# International Domains
+DOMAIN-SUFFIX,feishu.jp
+DOMAIN-SUFFIX,feishu.sg
